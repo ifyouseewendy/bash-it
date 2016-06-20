@@ -2,11 +2,10 @@ cite about-alias
 about-alias 'general aliases'
 
 # List directory contents
-alias sl=ls
 alias ls='ls -G'        # Compact view, show colors
 alias la='ls -AF'       # Compact view, show hidden
-alias ll='ls -al'
-alias l='ls -a'
+alias ll='ls -alhF'
+alias l='ls -CF'
 alias l1='ls -1'
 
 alias _="sudo"
@@ -22,13 +21,13 @@ then
 fi
 
 alias c='clear'
-alias k='clear'
-alias cls='clear'
+# alias k='clear'
+# alias cls='clear'
 
 alias edit="$EDITOR"
 alias pager="$PAGER"
 
-alias q='exit'
+# alias q='exit'
 
 alias irc="$IRC_CLIENT"
 
