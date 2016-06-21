@@ -22,14 +22,7 @@ alias pt='pstree'
 alias crontab="VIM_CRONTAB=true crontab"
 # alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 # alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-alias pbcopy='reattach-to-user-namespace pbcopy'
-alias pbpaste='reattach-to-user-namespace pbpaste'
 
-
-
-
-
-
-
-
-
+# Beginning with OSX Yosemite (10.10), pbcopy is reported to work correctly with tmux
+# alias pbcopy='reattach-to-user-namespace pbcopy'
+# alias pbpaste='reattach-to-user-namespace pbpaste'
