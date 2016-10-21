@@ -7,6 +7,7 @@ alias ri='ri -f ansi'
 # tools
 alias tigs='tig status'
 alias g='git status'
+alias vim='nvim'
 alias mvim='open -a /Applications/MacVim.app'
 # auto open gz by tar
 # alias -s gz='tar -xzvf'
