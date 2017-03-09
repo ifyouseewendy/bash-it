@@ -26,3 +26,5 @@ alias crontab="VIM_CRONTAB=true crontab"
 # Beginning with OSX Yosemite (10.10), pbcopy is reported to work correctly with tmux
 # alias pbcopy='reattach-to-user-namespace pbcopy'
 # alias pbpaste='reattach-to-user-namespace pbpaste'
+
+alias tmux="TERM=screen-256color-bce tmux"
