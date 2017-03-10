@@ -8,6 +8,26 @@ GIT_THEME_PROMPT_SUFFIX="${bold_blue}]"
 RBENV_THEME_PROMPT_PREFIX=" ${bold_blue}[${bold_red}"
 RBENV_THEME_PROMPT_SUFFIX="${bold_blue}]"
 
+CHRUBY_THEME_PROMPT_PREFIX=" ${bold_blue}[${bold_red}"
+CHRUBY_THEME_PROMPT_SUFFIX="${bold_blue}]"
+
+function chruby_version_prompt {
+  if declare -f -F chruby &> /dev/null; then
+    if declare -f -F chruby_auto &> /dev/null; then
+      chruby_auto
+    fi
+    ruby_version=$(ruby --version | awk '{print $1, $2;}') || return
+    if [[ ! $(chruby | grep '*') ]]; then
+      ruby_version="${ruby_version} (system)"
+    fi
+    echo -e "${CHRUBY_THEME_PROMPT_PREFIX}${ruby_version}${CHRUBY_THEME_PROMPT_SUFFIX}"
+  fi
+}
+
+function ruby_version_prompt {
+  echo -e "$(rbfu_version_prompt)$(rbenv_version_prompt)$(rvm_version_prompt)$(chruby_version_prompt)"
+}
+
 function prompt_command() {
     prompt_flag="${bold_red}➜ "
     relative_path="${cyan}\W"
