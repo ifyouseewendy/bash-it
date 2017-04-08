@@ -1,6 +1,6 @@
 # ruby
-alias bi='bundle install --binstubs .bundle/bin'
-# alias bi='bundle install --path=vendor/bundle --binstubs .bundle/bin'
+# alias bi='bundle install --binstubs .bundle/bin'
+alias bi='bundle install --path=vendor/bundle --binstubs .bundle/bin'
 alias be='bundle exec'
 alias ri='ri -f ansi'
 
@@ -28,3 +28,6 @@ alias crontab="VIM_CRONTAB=true crontab"
 # alias pbpaste='reattach-to-user-namespace pbpaste'
 
 alias tmux="TERM=screen-256color-bce tmux"
+
+# For fuck sake
+alias ffs="dev down && dev up && dev s"
