@@ -31,3 +31,8 @@ alias tmux="TERM=screen-256color-bce tmux"
 
 # For fuck sake
 alias ffs="dev down && dev up && dev s"
+
+alias dk="docker"
+alias dp="docker ps -a"
+alias dc="docker-compose"
+alias dm="docker-machine"
