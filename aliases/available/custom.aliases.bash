@@ -14,7 +14,10 @@ alias mvim='open -a /Applications/MacVim.app'
 alias pre='open -a Preview'
 alias tailf='tail -f'
 alias lessf='less +F'
-alias cat="ccat"
+alias cat="ccat --bg=dark"
+function lcat {
+  ccat --bg=dark --color=always $1 | less -R
+}
 alias cleardns="sudo killall -HUP mDNSResponder"
 alias pt='pstree'
 
