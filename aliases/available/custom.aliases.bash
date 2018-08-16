@@ -35,7 +35,11 @@ alias tmux="TERM=screen-256color-bce tmux"
 # For fuck sake
 alias ffs="dev down && dev up && dev s"
 
+# For docker
 alias dk="docker"
 alias dp="docker ps -a"
 alias dc="docker-compose"
 alias dm="docker-machine"
+
+# For local dev
+alias push-pr="git push -u origin HEAD --no-verify && dev open pr"
