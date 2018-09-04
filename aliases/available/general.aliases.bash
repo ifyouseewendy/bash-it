@@ -32,7 +32,7 @@ alias pager="$PAGER"
 alias irc="$IRC_CLIENT"
 
 # Language aliases
-alias rb='ruby'
+# alias rb='ruby'
 alias py='python'
 alias ipy='ipython'
 

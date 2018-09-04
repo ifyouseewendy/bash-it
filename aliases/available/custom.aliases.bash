@@ -14,12 +14,17 @@ alias mvim='open -a /Applications/MacVim.app'
 alias pre='open -a Preview'
 alias tailf='tail -f'
 alias lessf='less +F'
-alias cat="ccat --bg=dark"
+# alias cat="ccat --bg=dark"
+alias cat='bat'
 function lcat {
   ccat --bg=dark --color=always $1 | less -R
 }
 alias cleardns="sudo killall -HUP mDNSResponder"
 alias pt='pstree'
+alias ping='prettyping --nolegend'
+alias quickview="fzf --preview 'bat --color \"always\" {}'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 # service
 alias crontab="VIM_CRONTAB=true crontab"
